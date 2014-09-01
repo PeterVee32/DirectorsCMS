@@ -1,0 +1,9 @@
+{foreach $flashes as $flash}
+    {if $flash->type == "error"}
+        <div class="alert alert-danger">
+    {else}
+        <div class="alert alert-{$flash->type}">
+    {/if}
+        {$flash->message}
+    </div>
+{/foreach}

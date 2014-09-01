@@ -1,0 +1,23 @@
+<div class="navbar-default sidebar" role="navigation">
+    <div class="sidebar-nav navbar-collapse">
+        <ul class="nav" id="side-menu">
+            <li>
+                <a {ifCurrent Homepage:*}class="active"{/ifCurrent} href="{link Homepage:default}"><i class="fa fa-home fa-fw"></i> Úvod</a>
+            </li>
+            <li>
+                <a {ifCurrent Directors:*}class="active"{/ifCurrent} href="#"><i class="fa fa-user fa-fw"></i> Režiséry<span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li>
+                        <a href="{link Directors:default}">Správa režisérov</a>
+                    </li>
+                    <li>
+                        <a href="morris.html">Správa videií</a>
+                    </li>
+                </ul>
+                <!-- /.nav-second-level -->
+            </li>
+        </ul>
+    </div>
+    <!-- /.sidebar-collapse -->
+</div>
+<!-- /.navbar-static-side -->

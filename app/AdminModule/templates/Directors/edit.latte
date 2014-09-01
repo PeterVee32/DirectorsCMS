@@ -1,0 +1,63 @@
+{block content}
+<div id="wrapper">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+        {include '../header.latte'}
+
+        {include '../menu.latte'}
+    </nav>
+
+    <div id="page-wrapper">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Režiséri</h1>
+            </div>
+            <!-- /.col-lg-12 -->
+        </div>
+        <!-- /.row -->
+        <div class="row">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Upraviť režiséra
+                </div>
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <form class="form-inline" role="form" n:name="newDirectorForm">
+                        <input n:name="name" placeholder="Zadajte meno režiséra" class="form-control" />
+                        <input n:name="submit" class="btn btn-primary" />
+                    </form>
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+        </div>
+       
+    </div>
+    <!-- /#page-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+
+<!-- jQuery Version 1.11.0 -->
+<script src="{$basePath}/adm/js/jquery-1.11.0.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="{$basePath}/adm/js/bootstrap.min.js"></script>
+
+<!-- Metis Menu Plugin JavaScript -->
+<script src="{$basePath}/adm/js/plugins/metisMenu/metisMenu.min.js"></script>
+
+<!-- DataTables JavaScript -->
+<script src="{$basePath}/adm/js/plugins/dataTables/jquery.dataTables.js"></script>
+<script src="{$basePath}/adm/js/plugins/dataTables/dataTables.bootstrap.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="{$basePath}/adm/js/sb-admin-2.js"></script>
+
+<!-- Page-Level Demo Scripts - Tables - Use for reference -->
+<script>
+    $(document).ready(function() {
+        $('.dataTables').dataTable();
+    });
+</script>
